@@ -40,7 +40,7 @@ class TopCategoriesViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-   
+        
     }
 }
 

@@ -19,7 +19,6 @@
 		070FEBA4265A582300B0BBB7 /* TopCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070FEBA2265A582300B0BBB7 /* TopCategoryTableViewCell.swift */; };
 		070FEBA5265A582300B0BBB7 /* TopCategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 070FEBA3265A582300B0BBB7 /* TopCategoryTableViewCell.xib */; };
 		070FEBA7265A5A3600B0BBB7 /* CategoryEntityCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070FEBA6265A5A3600B0BBB7 /* CategoryEntityCoreDataManager.swift */; };
-		079BD4C8265B5AFA00AB7D10 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079BD4C7265B5AF900AB7D10 /* CoreDataManager.swift */; };
 		07E31C1E265D9ADE00393AA8 /* Nework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E31C1D265D9ADE00393AA8 /* Nework.swift */; };
 		35980DB50BA10BA16A0F3C2A /* Pods_TwitchCategories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 321DCF6F132BE0ECA83A9F32 /* Pods_TwitchCategories.framework */; };
 /* End PBXBuildFile section */
@@ -39,7 +38,6 @@
 		070FEBA2265A582300B0BBB7 /* TopCategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCategoryTableViewCell.swift; sourceTree = "<group>"; };
 		070FEBA3265A582300B0BBB7 /* TopCategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopCategoryTableViewCell.xib; sourceTree = "<group>"; };
 		070FEBA6265A5A3600B0BBB7 /* CategoryEntityCoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryEntityCoreDataManager.swift; sourceTree = "<group>"; };
-		079BD4C7265B5AF900AB7D10 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		07E31C1D265D9ADE00393AA8 /* Nework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nework.swift; sourceTree = "<group>"; };
 		321DCF6F132BE0ECA83A9F32 /* Pods_TwitchCategories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitchCategories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34C5D960E632EE25258C9BD6 /* Pods-TwitchCategories.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitchCategories.release.xcconfig"; path = "Target Support Files/Pods-TwitchCategories/Pods-TwitchCategories.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,7 +130,6 @@
 			children = (
 				070FEB88265A55C400B0BBB7 /* TwitchCategories.xcdatamodeld */,
 				070FEBA6265A5A3600B0BBB7 /* CategoryEntityCoreDataManager.swift */,
-				079BD4C7265B5AF900AB7D10 /* CoreDataManager.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -285,7 +282,6 @@
 				070FEBA4265A582300B0BBB7 /* TopCategoryTableViewCell.swift in Sources */,
 				070FEB82265A55C400B0BBB7 /* SceneDelegate.swift in Sources */,
 				070FEBA0265A57A700B0BBB7 /* CategoryEntity.swift in Sources */,
-				079BD4C8265B5AFA00AB7D10 /* CoreDataManager.swift in Sources */,
 				070FEB9E265A579100B0BBB7 /* CategoriesDetails.swift in Sources */,
 				070FEBA7265A5A3600B0BBB7 /* CategoryEntityCoreDataManager.swift in Sources */,
 			);

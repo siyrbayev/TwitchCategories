@@ -31,7 +31,7 @@ struct Categories: Decodable {
                 case name
                 case box
             }
-        
+            
             struct Box: Decodable {
                 let backPath: String?
                 

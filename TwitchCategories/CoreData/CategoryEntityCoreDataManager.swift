@@ -9,11 +9,6 @@ import Foundation
 import CoreData
 
 class CategoryEntityCoreDataManager {
-    typealias D = Categories.Top
-    typealias E = CategoryEntity
-    
-    final var index = 1
-    
     let coreDataEntityName: String = "CategoryEntity"
     
     static let shared = CategoryEntityCoreDataManager()
@@ -33,15 +28,15 @@ class CategoryEntityCoreDataManager {
     func save() {
         let context = persistentContainer.viewContext
         DispatchQueue.main.async {
-        if context.hasChanges {
-            context.performAndWait {
-                do {
-                    try context.save()
-                } catch let error as NSError {
-                    print(error)
+            if context.hasChanges {
+                context.performAndWait {
+                    do {
+                        try context.save()
+                    } catch let error as NSError {
+                        print(error)
+                    }
                 }
             }
-        }
         }
     }
     
@@ -94,11 +89,11 @@ class CategoryEntityCoreDataManager {
     
     func all(with offset: Int) -> [CategoryDetails] {
         let context = persistentContainer.viewContext
-//        let requestResult: NSFetchRequest<CategoryEntity> = CategoryEntity.fetchRequest()
+        //        let requestResult: NSFetchRequest<CategoryEntity> = CategoryEntity.fetchRequest()
         let fetchRequest = NSFetchRequest<CategoryEntity>()
         fetchRequest.fetchLimit = 10
         fetchRequest.fetchOffset = offset
-        let entityDesc = NSEntityDescription.entity(forEntityName: "CategoryEntity", in: context)
+        let entityDesc = NSEntityDescription.entity(forEntityName: coreDataEntityName, in: context)
         fetchRequest.entity = entityDesc
         let categories = try? context.fetch(fetchRequest)
         return categories?.map({ CategoryDetails.init(category: $0) }) ?? []
@@ -114,7 +109,6 @@ class CategoryEntityCoreDataManager {
         } catch {
             print(error)
         }
-        self.index = 1
         save()
     }
 }

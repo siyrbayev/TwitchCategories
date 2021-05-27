@@ -10,6 +10,6 @@ import Alamofire
 
 open class NetworkConnection {
     class var isConnectedToInternet:Bool {
-            return NetworkReachabilityManager()?.isReachable ?? false
+        return NetworkReachabilityManager()?.isReachable ?? false
     }
 }
